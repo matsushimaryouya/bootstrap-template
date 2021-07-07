@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="./favicon.ico">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap-4.2.1/dist/css/bootstrap.min.css">
+    <title>template</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="https://getbootstrap.jp/docs/4.2/assets/brand/bootstrap-solid.svg" width="30" height="30"
+                class="d-inline-block align-top" alt="">
+            Bootstrap
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./dashboard.html">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">選択不可</a>
+                </li>
+            </ul>
+        </div>
+        <button type="button" class="btn btn-primary"><a class="text-white" href="https://getbootstrap.jp/docs/4.2/components/alerts/">Bootstrap Link</a></button>
+    </nav>
+
+    <!-- Layout -->
+    <div class="container mt-5">
+        <h2>Layout</h2>
+        <img src="./custom/img/grid-option.png" alt="">
+        <div class="row mt-5">
+            <div class="col">
+                <p>d-flex：フレックスボックス</p>
+                <p>align-items-center</p>
+                <p>justify-content-center</p>
+                <p></p>
+                <p>mx-auto:中央配置</p>
+                <p>text-center, text-left, text-right：中央寄せ等</p>
+            </div>
+            <div class="col">
+                <p>col-12 col-lg-6：<br>992px以上はmx-width:50%, それ以外は100%</p>
+            </div>
+        </div>
+        <div class="mt-3">
+            
+        </div>
+        <div class="row mt-5">
+            <div class="col-sm bg-dark">
+                One of three columns
+                <ul>
+                    <li>Text</li>
+                    <li>Text</li>
+                    <li>Text</li>
+                </ul>
+            </div>
+            <div class="col-sm">
+                One of three columns
+            </div>
+            <div class="col-sm bg-dark">
+                One of three columns
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                1 of 2
+                <ul>
+                    <li>Text</li>
+                    <li>Text</li>
+                    <li>Text</li>
+                </ul>
+            </div>
+            <div class="col bg-secondary">
+                2 of 2
+            </div>
+        </div>
+        <div class="row">
+            <div class="col bg-dark">
+                1 of 3
+                <ul>
+                    <li>Text</li>
+                    <li>Text</li>
+                    <li>Text</li>
+                </ul>
+            </div>
+            <div class="col">
+                2 of 3
+            </div>
+            <div class="col bg-dark">
+                3 of 3
+            </div>
+        </div>
+    </div>
+
+    <!-- Carousel -->
+    <div class="container mt-5">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <h1>Carousel</h1>
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+                        role="img" aria-label="Placeholder: First slide">
+                        <title>Placeholder</title>
+                        <rect fill="#777" width="100%" height="100%" /><text fill="#555" dy=".3em" x="50%" y="50%">First
+                            slide</text>
+                    </svg>
+                </div>
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+                        role="img" aria-label="Placeholder: Second slide">
+                        <title>Placeholder</title>
+                        <rect fill="#666" width="100%" height="100%" /><text fill="#444" dy=".3em" x="50%"
+                            y="50%">Second slide</text>
+                    </svg>
+                </div>
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+                        role="img" aria-label="Placeholder: Third slide">
+                        <title>Placeholder</title>
+                        <rect fill="#555" width="100%" height="100%" /><text fill="#333" dy=".3em" x="50%" y="50%">Third
+                            slide</text>
+                    </svg>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Botton -->
+    <div class="container mt-5">
+        <h2>Buttons</h2>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-link">Link</button>
+    </div>
+
+    <!-- Card -->
+    <div class="container mt-5">
+        <h2>Card</h2>
+        <!-- Horizontal -->
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <svg class="bd-placeholder-img" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>Placeholder</title><rect fill="#868e96" width="100%" height="100%"/><text fill="#dee2e6" dy=".3em" x="50%" y="50%">Image</text></svg>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Example -->
+        <div class="card" style="width: 18rem;">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect fill="#868e96" width="100%" height="100%"/><text fill="#dee2e6" dy=".3em" x="50%" y="50%">Image cap</text></svg>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Table -->
+    <div class="container mt-5">
+        <h1>Table</h1>
+        <table class="table listTable table-striped table-sm">
+            <thead>
+                <tr>
+                    <th class="text-center">
+                        年月日
+                    </th>
+                    <th class="text-center">出退勤</th>
+                    <th class="text-center">収入</th>
+                    <th class="text-center">支出</th>
+                    <th class="text-center">合計</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-center">2020/08/02</td>
+                    <td class="text-center"><span class="">出勤</span></td>
+                    <td class="text-center">25,000</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">5,825,000</td>
+                </tr>
+                <tr>
+                    <td class="text-center">2020/08/02</td>
+                    <td class="text-center"><span class="">出勤</span></td>
+                    <td class="text-center">25,000</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">5,825,000</td>
+                </tr>
+                <tr>
+                    <td class="text-center">2020/08/02</td>
+                    <td class="text-center"><span class="">出勤</span></td>
+                    <td class="text-center">25,000</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">5,825,000</td>
+                </tr>
+                <tr>
+                    <td class="text-center">2020/08/02</td>
+                    <td class="text-center"><span class="">出勤</span></td>
+                    <td class="text-center">25,000</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">5,825,000</td>
+                </tr>
+                <tr>
+                    <td class="text-center">2020/08/02</td>
+                    <td class="text-center"><span class="">出勤</span></td>
+                    <td class="text-center">25,000</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">5,825,000</td>
+                </tr>
+                <tr>
+                    <td class="text-center">2020/08/02</td>
+                    <td class="text-center"><span class="">出勤</span></td>
+                    <td class="text-center">25,000</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">5,825,000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <footer class="bg-light mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <span class="logo">LOGO</span>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="menu">
+                        <span>Menu</span>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Gallery</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="address">
+                        <span>Contact</span>
+                        <li>
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <a href="#">Phone</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <a href="#">Adress</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <a href="#">Email</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+    <script src="./custom/js/custom.js"></script>
+</body>
+
+</html>

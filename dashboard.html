@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="./favicon.ico">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./bootstrap-4.2.1/dist/css/bootstrap.min.css">
+  <title>dashboard</title>
+</head>
+
+<body>
+  <!-- ヘッダー -->
+  <div class="header d-flex align-items-center px-3 d-lg-none bg-light"></div>
+  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+  <label for="openSidebarMenu" class="sidebarIconToggle d-flex flex-column align-content-between d-lg-none">
+    <div class="spinner diagonal part-1 bg-dark"></div>
+    <div class="spinner horizontal bg-dark"></div>
+    <div class="spinner diagonal part-2 bg-dark"></div>
+  </label>
+  <!-- サイドバー -->
+  <div id="sidebarMenu" class="col-lg-4 d-flex align-items-center justify-content-center bg-secondary">
+    <div class="sidebarMenuBox d-flex flex-column align-items-center">
+      <a class="text-white" href="#">
+        <h3>Title</h3>
+      </a>
+      <ul class="sidebarMenuInner">
+        <li class="d-flex"><a href="#">ダッシュボード<span class="d-block">Dashboard</span></a><img class="arrow"
+            src="./custom/img/icon/nextIcon.svg" alt=""></li>
+        <li class="d-flex"><a href="#">コンテンツ1<span>Contents1</span></a></li>
+        <li class="d-flex"><a href="#">コンテンツ2<span>Contents2</span></a></li>
+        <li class="d-flex"><a href="#">コンテンツ3<span>Contents3</span></a></li>
+        <li class="d-flex"><a href="#">プロフィール<span>Profile</span></a></li>
+        <li class="d-flex"><a href="#">ログアウト<span>Logout</span></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ここからコンテンツ -->
+  <main role="main" class="col-lg-8 ml-sm-auto col-lg-8 px-3 mt-3">
+    <div class="d-lg-flex justify-content-between mt-3 mt-lg-0">
+      <div class="col-12 col-lg-6 px-0 px-lg-2">
+        <div class="card text-white bg-secondary" style="height: 100%;">
+          <div class="card-body p-3 px-lg-4 py-lg-4">
+            <div class="d-flex justify-content-between">
+              <h1 class="card-title">Card1<span>カード2</span></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" col-12 col-lg-6 px-0">
+        <div class="px-0 px-lg-2 mt-3 mt-lg-0">
+
+          <div class="text-white bg-secondary mt-3 mt-lg-0">
+            <div class="card-body p-3 px-lg-4 py-lg-4">
+              <div class="d-flex justify-content-between">
+                <h1 class="card-title">Card2<span>カード2</span></h1>
+              </div>
+              <ul>
+                <li>Text</li>
+                <li>Text</li>
+                <li>Text</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card text-white bg-secondary mt-3">
+            <div class="card-body p-3 px-lg-4 py-lg-4">
+              <div class="d-flex justify-content-between">
+                <h1 class="card-title">Card3<span>カード3</span></h1>
+              </div>
+              <ul>
+                <li>Text</li>
+                <li>Text</li>
+                <li>Text</li>
+                <li>Text</li>
+                <li>Text</li>
+                <li>Text</li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="col-12 my-3 px-0 px-lg-2">
+        <div class="card col-12 text-white bg-secondary pb-3 mt-3 mt-lg-0">
+          <div class="card-body p-0 pt-3 px-lg-1 py-lg-4">
+            <div class="d-flex justify-content-between">
+              <h1 class="card-title">Card4<span>カード4</span></h1>
+            </div>
+            <div class="d-lg-flex">
+              <div class="col-12 col-lg-6 px-0 px-lg-2">
+                <div class="card bg-dark text-center">
+                  <div class="card-body">
+                    <ul>
+                      <li>Text</li>
+                      <li>Text</li>
+                      <li>Text</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 px-0 px-lg-2 mt-3 mt-lg-0">
+                <div class="card bg-dark text-center">
+                  <div class="card-body">
+                    <ul>
+                      <li>Text</li>
+                      <li>Text</li>
+                      <li>Text</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- ここまでページの内容 -->
+  </main>
+  <footer class="d-flex d-lg-none align-items-center justify-content-center">
+    <img src="./custom/img/logo-green.png" alt="logo">
+  </footer>
+
+
+
+  <style>
+    .dashboardCard {
+      height: calc(100vh - 6rem);
+      border-radius: 10px;
+    }
+    .cardContent {
+      border-radius: 10px;
+      position: relative;
+    }
+    .card-title {
+      font-size: 2.2rem;
+      font-family: brandon-grotesque, sans-serif !important;
+      font-weight: 400;
+      font-style: normal;
+    }
+    .card-title span {
+      font-size: 16px;
+      padding-left: 12px;
+      font-weight: bold;
+    }
+    /* トグルスイッチ */
+    .switch__label {
+      width: 60px;
+      position: relative;
+      display: inline-block;
+    }
+    .switch__content {
+      display: block;
+      cursor: pointer;
+      position: relative;
+      border-radius: 2rem;
+      height: 32px;
+      overflow: hidden;
+    }
+    .switch__content:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: calc(100% - 3px);
+      height: calc(100% - 3px);
+      top: 0;
+      left: 0;
+      border-radius: 2rem;
+      background-color: #fff;
+    }
+    .switch__content:after {
+      content: "";
+      display: block;
+      position: absolute;
+      background-color: transparent;
+      width: 0;
+      height: 0;
+      top: 50%;
+      left: 50%;
+      border-radius: 30px;
+      -webkit-transition: all .5s;
+      -moz-transition: all .5s;
+      -ms-transition: all .5s;
+      -o-transition: all .5s;
+      transition: all .5s;
+    }
+    .switch__input {
+      display: none;
+    }
+    .switch__circle {
+      display: block;
+      top: 1px;
+      left: 2px;
+      position: absolute;
+      -webkit-box-shadow: 0 2px 6px #999;
+      box-shadow: 0 2px 6px #999;
+      width: 27px;
+      height: 27px;
+      -webkit-border-radius: 20px;
+      border-radius: 20px;
+      background-color: #0093BF;
+      -webkit-transition: all .5s;
+      -moz-transition: all .5s;
+      -ms-transition: all .5s;
+      -o-transition: all .5s;
+      transition: all .5s;
+    }
+    .switch__input:checked~.switch__circle {
+      left: 29px;
+    }
+    .switch__input:checked~.switch__content:after {
+      background-color: #00c4cc;
+      top: 0;
+      left: 0;
+      width: 95%;
+      height: 90%;
+    }
+    .switch2__label {
+      width: 44px;
+      position: relative;
+      display: inline-block;
+    }
+    .switch2__content {
+      display: block;
+      cursor: pointer;
+      position: relative;
+      border-radius: 2rem;
+      height: 20px;
+      -webkit-transition: all .1s .4s;
+      -moz-transition: all .1s .4s;
+      -ms-transition: all .1s .4s;
+      -o-transition: all .1s .4s;
+      transition: all .1s .4s;
+      overflow: hidden;
+    }
+    .switch2__content:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: calc(100% - 4px);
+      height: calc(100% - 4px);
+      top: 0;
+      left: 0;
+      border: 1.5px solid #000000;
+      border-radius: 20px;
+      background-color: #fff;
+    }
+    .switch2__content:after {
+      content: "";
+      display: block;
+      position: absolute;
+      background-color: transparent;
+      width: 0;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 20px;
+      -webkit-transition: all .5s;
+      -moz-transition: all .5s;
+      -ms-transition: all .5s;
+      -o-transition: all .5s;
+      transition: all .5s;
+    }
+    .switch2__input {
+      display: none;
+    }
+    .switch2__circle {
+      display: block;
+      top: 5px;
+      left: 5px;
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      background-color: #000000;
+      -webkit-transition: all .5s;
+      -moz-transition: all .5s;
+      -ms-transition: all .5s;
+      -o-transition: all .5s;
+      transition: all .5s;
+    }
+    .switch2__input:checked~.switch2__circle {
+      left: 29px;
+      background-color: #fff;
+    }
+    .switch2__input:checked~.switch2__content {
+      border-color: transparent;
+      -webkit-transition: all 0s;
+      -moz-transition: all 0s;
+      -ms-transition: all 0s;
+      -o-transition: all 0s;
+      transition: all 0s;
+    }
+    .switch2__input:checked~.switch2__content:after {
+      background-color: #0078D7;
+      width: 100%;
+    }
+    .switch3__label {
+      width: 37px;
+      position: relative;
+      display: inline-block;
+      padding-top: 3px;
+    }
+    .switch3__content {
+      display: block;
+      cursor: pointer;
+      position: relative;
+      border-radius: 7px;
+      height: 14px;
+      background-color: rgba(34, 31, 31, .26);
+      -webkit-transition: all .1s .4s;
+      -moz-transition: all .1s .4s;
+      -ms-transition: all .1s .4s;
+      -o-transition: all .1s .4s;
+      transition: all .1s .4s;
+      overflow: hidden;
+    }
+    .switch3__content:after {
+      content: "";
+      display: block;
+      position: absolute;
+
+      width: 0;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 7px;
+      -webkit-transition: all .5s;
+      -moz-transition: all .5s;
+      -ms-transition: all .5s;
+      -o-transition: all .5s;
+      transition: all .5s;
+    }
+    .switch3__input {
+      display: none;
+    }
+    .switch3__circle {
+      display: block;
+      top: 0px;
+      left: 0px;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      background-color: #F1F1F1;
+      -webkit-transition: all .5s;
+      -moz-transition: all .5s;
+      -ms-transition: all .5s;
+      -o-transition: all .5s;
+      transition: all .5s;
+      -webkit-box-shadow: 0 2px 2px #ccc;
+      box-shadow: 0 2px 2px #ccc;
+    }
+    .switch3__input:checked~.switch3__circle {
+      left: 18px;
+      background-color: #009688;
+    }
+    .switch3__input:checked~.switch3__content {
+      border-color: transparent;
+      -webkit-transition: all 0s;
+      -moz-transition: all 0s;
+      -ms-transition: all 0s;
+      -o-transition: all 0s;
+      transition: all 0s;
+    }
+    .switch3__input:checked~.switch3__content:after {
+      background-color: rgba(0, 150, 136, .5);
+      width: 100%;
+    }
+    html,
+    body {
+      overflow-x: hidden;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    .header {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 100%;
+      box-shadow: none;
+      position: fixed;
+      height: 60px !important;
+      overflow: hidden;
+      z-index: 10;
+    }
+    .main {
+      margin: 0 auto;
+      display: block;
+      height: 100%;
+      margin-top: 60px;
+    }
+    .mainInner {
+      display: table;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+    }
+    .mainInner div {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 3em;
+      font-weight: bold;
+      letter-spacing: 1.25px;
+    }
+    #sidebarMenu {
+      height: 100%;
+      position: fixed;
+      left: 0;
+      width: 100%;
+      margin-top: 60px;
+      transform: translateX(-100%);
+      transition: transform 250ms ease-in-out;
+      z-index: 1;
+      font-weight: bold;
+    }
+    .sidebarMenuBox {
+      margin-left: -30px;
+    }
+    .sidebarMenuInner {
+      margin: 0;
+      padding: 0;
+    }
+    .sidebarMenuInner li {
+      list-style: none;
+      color: #fff;
+      font-size: 17px;
+      font-weight: bold;
+      padding: 10px;
+      cursor: pointer;
+      position: relative;
+    }
+    .sidebarMenuInner li span {
+      margin-top: 7px;
+      font-size: 12px;
+      color: rgba(255, 255, 255);
+      margin-left: 10px;
+    }
+    .sidebarMenuInner li a {
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    input[type="checkbox"]:checked~#sidebarMenu {
+      transform: translateX(0);
+    }
+    input[type=checkbox] {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      display: none;
+    }
+    .sidebarIconToggle {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      cursor: pointer;
+      position: absolute;
+      z-index: 99;
+      height: 20.5px;
+      top: 22px;
+      right: 15px;
+      height: 22px;
+      width: 22px;
+      width: 35px;
+    }
+    .spinner {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      border-radius: 1.5px;
+    }
+    .horizontal {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      position: relative;
+      float: left;
+      margin-top: 5px;
+    }
+    .diagonal.part-1 {
+      position: relative;
+      transition: all 0.3s;
+      box-sizing: border-box;
+      float: left;
+    }
+    .diagonal.part-2 {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      position: relative;
+      float: left;
+      margin-top: 5px;
+      width: 70%;
+      margin-right: 0;
+      margin-left: auto;
+    }
+    input[type=checkbox]:checked~.sidebarIconToggle>.horizontal {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      opacity: 0;
+    }
+    input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-1 {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      transform: rotate(135deg);
+      margin-top: 8px;
+    }
+    input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      transform: rotate(-135deg);
+      margin-top: -11px;
+      width: 100%;
+    }
+    @media screen and (min-width:992px) {
+      #sidebarMenu {
+        height: 100%;
+        position: fixed;
+        left: 0;
+        margin-top: 0px;
+        transform: translateX(0);
+      }
+    }
+  </style>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+  </script>
+  <script src="./custom/js/custom.js"></script>
+</body>
+
+</html>
